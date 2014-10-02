@@ -275,6 +275,41 @@ header nav ul li a:hover {
 	border-bottom: 0px;
 }
 
+.intext {
+	width: 60%;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intext tr {
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+
+.intext tr:nth-of-type(2n) {
+	background: #f0f0f0;
+}
+
+.intext th {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.intext td, .intext th {
+	padding: 10px;
+}
+
+.intext td {
+	padding-left: 15px;
+}
+
+.intext td:first-child {
+	border-right: 1px solid #ccc;
+}
+
 section {
 	margin-top: 23px;
 	margin-left: 1.5%;
@@ -414,6 +449,9 @@ section {
 
 .content p, .content ul {
 	width: 100%;
+}
+
+.content p, .content ul, .intext {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-weight: 300;	
 	font-size: 12pt;
@@ -425,6 +463,7 @@ section {
 
 .content ul {
 	padding-left: 20px;
+	list-style-type: disc;
 }
 
 .content ul li {
@@ -449,8 +488,8 @@ section {
 	color: #333;
 }
 
-h3 .first-header {
-	padding-top: 40px;
+.first-header {
+	padding-top: 40px !important;
 }
 
 .content h4 {
