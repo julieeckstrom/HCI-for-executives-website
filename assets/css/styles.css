@@ -5,6 +5,8 @@
 
 /* START OF CUSTOM CSS */
 
+@accent-color: #EE3B3B;
+
 /* Structure */
 
 body {
@@ -431,7 +433,7 @@ section {
 
 .content a {
 	text-decoration: none;
-	color: #EE3B3B;
+	color: @accent-color;
 }
 
 .content a:hover {
