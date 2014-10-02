@@ -257,6 +257,10 @@ header nav ul li a:hover {
 	font-weight: 400;
 }
 
+.tabs li:first-child {
+	padding-top: 0px;
+}
+
 section {
 	margin-top: 23px;
 	margin-left: 1.5%;
