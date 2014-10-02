@@ -238,6 +238,10 @@ header nav ul li a:hover {
 
 /* Main Content */ 
 
+.tabs {
+	margin-bottom: 15px;
+}
+
 .tabs li {
 	width: 100%;
 	height: auto;
@@ -252,7 +256,6 @@ header nav ul li a:hover {
 	text-decoration: none;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: #EE3B3B;
 	text-transform: uppercase;
 	font-weight: 400;
 }
@@ -420,6 +423,10 @@ section {
 .content a {
 	text-decoration: none;
 	color: #EE3B3B;
+}
+
+.content a:hover {
+	color: #333;
 }
 
 .content h3 {
