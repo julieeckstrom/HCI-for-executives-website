@@ -386,6 +386,14 @@ section {
 	padding-top: 15px;
 }
 
+.content ul {
+	padding-left: 20px;
+}
+
+.content ul li {
+	margin-bottom: 10px;
+}
+
 .content a {
 	text-decoration: none;	
 }
