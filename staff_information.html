@@ -1,45 +1,100 @@
-<?php $thisPage="staff_information"; ?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<title>HCI for Technology Executives</title>
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/animate.js"></script> 
+<script src="assets/js/hamburger.js"></script>
+<script src="assets/js/main.js"></script>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-<? include ("header.php") ?>
-        
-<article>
+</head>
 
-<div id="title">
-    	<p>Meet the Staff</p>
-    </div>
 
-<div class="interior" id="instructor">
-<img src="assets/images/myers.png"/>
-<p><strong>Brad Myers</strong> (Instructor)<br>bam@cs.cmu.edu<br>phone x8-5150<br>office Newell-Simon Hall (NSH) 3517<br>Website</p>
-</div>
+<body>
 
-<div id="TA1" class="TA">
-	<img src="assets/images/loffredo.png"/>
-<p><strong>Maggie Bignell</strong><br><a href="#">mbignell@andrew.cmu.edu</a><br><a href="http://maggiebignell.com/" target="_blank">maggiebignell.com</a></p>
-</div><div id="TA2" class="TA">
-<img src="assets/images/li.png"/>
-<p><strong>Sabrina Li</strong><br><a href="#">sjli@andrew.cmu.edu</a><br><a href="http://sabrina.li/" target="_blank">sabrina.li</a></p>
-</div><div id="TA3" class="TA">
-<img src="assets/images/loffredo.png"/>
-<p><strong>Michael Loffredo</strong><br><a href="#">mlloffre@andrew.cmu.edu</a><br><a href="http://mloffredo.com/" target="_blank">mloffredo.com</a></p>
-</div><div id="TA4" class="TA">
-<img src="assets/images/schlossman.png"/>
-<p><strong>Emily Schlossman</strong><br><a href="#">eschloss@andrew.cmu.edu</a><br><a href="http://www.ejschlossman.com/" target="_blank">ejschlossman.com</a></p>
-</div>
-
-    <div class="interior">
-<p>Office Hours</p>
-</div>
-
-     <div class="interior">
-<p>Administrators</p>
-</div>
-
-<div class="clear">
+    <div id="contentLayer"></div>
     
-   </div>
-   
-</article>
+    <header>
+    <div class="dec"></div>
+        <nav>
+            <div id="nav-container">
+                <div id="hamburger">
+                    <div></div>
+                    <div id="middle"></div>
+                    <div></div>
+                </div> 
+                <ul id="main_nav">
+                    <li  id="first-nav-item"><a href="index.php">About the Course</a></li>
+                    <li><a href="schedule_syllabus.php">Schedule &amp; Syllabus</a></li>
+                    <li><a href="homework.php">Homework</a></li>
+                    <li><a href="staff_information.php" class="on">Staff Information</a></li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+
+    <nav id="mobile_nav">
+        <ul>
+        <li id="icon-close">X</li>
+        <li class="m-nav-item"><a href="#" class="m-nav-link" id="on-mobile">About the Course</a></li>
+        <li class="m-nav-item"><a href="#" class="m-nav-link">Schedule &amp; Syllabus</a></li>
+        <li class="m-nav-item"><a href="#" class="m-nav-link">Homework</a></li>
+        <li class="m-nav-item" id="m-nav-item-last"><a href="staff_information.php" class="m-nav-link">Staff Information</a></li>
+     </ul>
+    </nav>    
+    
+    <div id="container">
+		<article>
+
+		<div id="title">
+		    	<p>Meet the Staff</p>
+		    </div>
+
+		<div class="interior" id="instructor">
+		<img src="assets/images/myers.png"/>
+		<p><strong>Brad Myers</strong> (Instructor)<br>bam@cs.cmu.edu<br>phone x8-5150<br>office Newell-Simon Hall (NSH) 3517<br>Website</p>
+		</div>
+
+		<div id="TA1" class="TA">
+			<img src="assets/images/loffredo.png"/>
+		<p><strong>Maggie Bignell</strong><br><a href="#">mbignell@andrew.cmu.edu</a><br><a href="http://maggiebignell.com/" target="_blank">maggiebignell.com</a></p>
+		</div><div id="TA2" class="TA">
+		<img src="assets/images/li.png"/>
+		<p><strong>Sabrina Li</strong><br><a href="#">sjli@andrew.cmu.edu</a><br><a href="http://sabrina.li/" target="_blank">sabrina.li</a></p>
+		</div><div id="TA3" class="TA">
+		<img src="assets/images/loffredo.png"/>
+		<p><strong>Michael Loffredo</strong><br><a href="#">mlloffre@andrew.cmu.edu</a><br><a href="http://mloffredo.com/" target="_blank">mloffredo.com</a></p>
+		</div><div id="TA4" class="TA">
+		<img src="assets/images/schlossman.png"/>
+		<p><strong>Emily Schlossman</strong><br><a href="#">eschloss@andrew.cmu.edu</a><br><a href="http://www.ejschlossman.com/" target="_blank">ejschlossman.com</a></p>
+		</div>
+
+		    <div class="interior">
+		<p>Office Hours</p>
+		</div>
+
+		     <div class="interior">
+		<p>Administrators</p>
+		</div>
+
+		<div class="clear">
+		    
+		   </div>
+		   
+		</article>
 
 
-<? include ("footer.php") ?>
+    <footer>
+        <div id="footer-container">
+            <p>©2014 Copyright <a href="http://www.cs.cmu.edu/~bam/" target="_blank">Brad Myers</a>. Website designed and built by <a href="http://mloffredo.com/" target="_blank">Michael Loffredo</a> and <a href="http://www.julieeckstrom.com/" target="_blank">Julie Eckstrom</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
