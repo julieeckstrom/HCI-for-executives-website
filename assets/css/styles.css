@@ -400,9 +400,9 @@ section {
 
 .content h3 {
 	padding-top: 80px;
-	padding-bottom: 15px;	
+	padding-bottom: 5px;	
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 16pt;
 	color: #333;
 }
