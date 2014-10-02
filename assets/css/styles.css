@@ -438,6 +438,19 @@ section {
 	color: #333;
 }
 
+h3 .first-header {
+	padding-top: 40px;
+}
+
+.content h4 {
+	padding-top: 80px;
+	padding-bottom: 5px;	
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 14pt;
+	color: #333;	
+}
+
 .admin {
 	width: 32%;	
 	display: inline-block;
