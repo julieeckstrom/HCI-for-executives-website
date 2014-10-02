@@ -375,14 +375,14 @@ section {
 	letter-spacing: 1.5px;
 }
 
-.content p {
+.content p, .content ul {
 	width: 100%;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-weight: 100;	
-	font-size: 14pt;
+	font-weight: 300;	
+	font-size: 12pt;
 	line-height: 21pt;
 	letter-spacing: .3px;
-	color: #999;
+	color: #333;
 	padding-top: 15px;
 }
 
@@ -391,12 +391,12 @@ section {
 }
 
 .content h3 {
-	padding-top: 60px;
+	padding-top: 80px;
 	padding-bottom: 15px;	
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-weight: 100;
-	font-size: 14pt;
-	color: #999;
+	font-size: 16pt;
+	color: #333;
 }
 
 .admin {
@@ -734,6 +734,10 @@ aside {
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.left-aside {
+	margin-left: 0;
 }
 
 aside p {
