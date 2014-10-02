@@ -242,14 +242,19 @@ header nav ul li a:hover {
 	width: 100%;
 	height: auto;
 	display: block;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
+	text-align: right;
+	border-bottom: 1px solid #ececec;
+	padding-top: 15px;
 }
 
 .tabs li a {
 	text-decoration: none;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-size: 10px;
-	
+	font-size: 14px;
+	color: #EE3B3B;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
 section {
@@ -409,7 +414,8 @@ section {
 }
 
 .content a {
-	text-decoration: none;	
+	text-decoration: none;
+	color: #EE3B3B;
 }
 
 .content h3 {
