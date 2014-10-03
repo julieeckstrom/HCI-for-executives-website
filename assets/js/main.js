@@ -7,6 +7,7 @@ Date.prototype.getWeek = function() {
 
 $(document).ready(function() {
 
+/*
 	$(window).scroll(function() {
 	var window_top = $(window).scrollTop();
 	var width = window.innerWidth;
@@ -51,5 +52,5 @@ $(document).ready(function() {
         	}
     	}
     });
-
+*/
 });

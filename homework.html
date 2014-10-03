@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <title>HCI for Technology Executives</title>
@@ -10,6 +9,8 @@
 <script src="assets/js/animate.js"></script> 
 <script src="assets/js/hamburger.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/modernizr.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
 </head>
@@ -29,9 +30,9 @@
                     <div></div>
                 </div> 
                 <ul id="main_nav">
-                    <li  id="first-nav-item"><a href="index.html" class="on">About the Course</a></li>
+                    <li  id="first-nav-item"><a href="index.html">Introduction to HCI for Technology Executives</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="homework.html">Homework</a></li>
+                    <li><a href="homework.html" class="on">Homework</a></li>
                     <li><a href="syllabus.html">Syllabus</a></li>
                     <li><a href="staff_information.html">Staff Information</a></li>
                 </ul>
@@ -56,6 +57,61 @@
                 <p>Homework</p>
             </div>
 
+                <ul id="og-grid" class="og-grid">
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/">
+                            <div class="tile"></div>
+                        </a>
+                        <div class="og-expander">
+                            <div class="og-expander-inner">
+                                <span class="og-close"></span>
+                                <div class="og-details">
+                                    <h3>Veggies sunt bona vobis</h3>
+                                    <p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
+                                    <a href="http://cargocollective.com/jaimemartinez/">Visit website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                            <div class="tile"></div>
+                        </a>
+                    </li>
+                </ul>
+
+
+
         </article>
 
     </div>
@@ -66,6 +122,12 @@
         </div>
     </footer>
     
+    <script src="assets/js/vendor/grid.js"></script>
+        <script>
+            $(function() {
+                Grid.init();
+            });
+        </script>
 </body>
 
 </html>
