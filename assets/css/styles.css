@@ -620,6 +620,14 @@ section {
 	padding-bottom: 10px;	
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
 
 /* Schedule Content */ 
 
