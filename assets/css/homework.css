@@ -1,27 +1,94 @@
+.list-inline {
+	margin-top: 23px;
+}
+
 .list-inline li {
 	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-left: 0.7em;
+	width: 6.5em;
+	height: 100px;
 }
 
 .list-inline li a {
 	width: 6.5em;
 	height: 100px;
 	display: block;
+	cursor: pointer;
+	position: relative;
 }
 
 .tile {
-	width: 6.5em;
-	height: 100px;
-	background: #fff;	
+	width: 100%;
+	height: 100%;
+	background: #fff;
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 }
 
+.tile h2 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	padding: 15px 0 10px 0;
+	font-size: 25px;
+}
+
+.tile #smaller-header {
+	font-size: 14px;
+}
+
+.tile p {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 10pt;
+	line-height: 14pt;
+	letter-spacing: 0px;
+}
+
 .homework {
 	width: 100%;
-	height: 400px;
-	background: #fff;
+	height: auto;
 }
+
+/*** Thumb states ***/
+
+
+li a.inactive {
+	opacity: 0.6;
+}
+
+li a.selected .tile{
+	background: #ccc;
+}
+
+li a.selected:before, li a.selected:after {
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+}
+
+li a.selected:before {
+	bottom: -21px;
+	left: 30px;
+	border-top-color: #ccc;
+	border-width: 21px;
+}
+
+li a.selected:after {
+	bottom: -17px;
+	left: 34px;
+	border-top-color: #ccc;
+	border-width: 17px;
+}
+
+
+/*** Carousel CSS ***/
 
 .carousel {
 	position: relative;
