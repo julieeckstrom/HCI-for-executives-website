@@ -26,6 +26,10 @@ header {
 				padding-right: 2.5%;
 				padding-left: 2.5%;
 
+				#first-nav-item {
+					border-left: solid 1px;
+				}
+
 				a {
 					text-decoration: none;	
 					color: #999;
@@ -36,6 +40,11 @@ header {
 
 					&:hover {
 						color: #000000;
+					}
+
+					&.on {
+						color: #000;
+						font-weight: 700;
 					}
 				}
 			}
@@ -49,11 +58,6 @@ header {
 		display: block;
 	}
 
-	#first-nav-item {
-		border-left: solid 1px;
-	}
-
-
 }
 
 #mobile_nav {
@@ -63,12 +67,6 @@ header {
     width: 290px;
     height: 100%;
     background-color: #2B2B2B;
-}
-
-
-.on {
-	color: #000;
-	font-weight: 700;
 }
 
 #on-mobile {
