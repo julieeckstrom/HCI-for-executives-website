@@ -9,9 +9,10 @@ $(document).ready(function() {
 
 	$('#main_nav li a').each(function(){
 		var path = window.location.pathname;
+		var loc = path.substring(path.lastIndexOf('/')+1);
 		var url = $(this).attr('href');
 
-		if(path == url){
+		if(loc == url){
 			$(this).addClass('on');
 		};
 	});
