@@ -7,6 +7,15 @@ Date.prototype.getWeek = function() {
 
 $(document).ready(function() {
 
+	$('#main_nav li a').each(function(){
+		var path = window.location.pathname;
+		var url = $(this).attr('href');
+
+		if(path == url){
+			$(this).addClass('on');
+		};
+	});
+
 	// handles the carousel thumbnails
 	$('.carousel-thumb').click( function(){
 	    var id_selector = $(this).attr("id");
