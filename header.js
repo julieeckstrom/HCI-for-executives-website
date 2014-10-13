@@ -1,7 +1,4 @@
 document.write('\
-    <script>\
-        var page = window.location.pathname;\
-    </script>\
     <div id="contentLayer"></div>\
     <header>\
         <div class="dec"></div>\
@@ -13,7 +10,7 @@ document.write('\
                     <div></div>\
                 </div>\
                 <ul id="main_nav">\
-                    <li id="first-nav-item"><a href="index.html">Introduction to HCI for Technology Executives</a></li>\
+                    <li id="first-nav-item"><a href="index.html">Intro to HCI for Technology Executives 2014</a></li>\
                     <li><a href="schedule.html">Schedule</a></li>\
                     <li><a href="homework.html">Homework</a></li>\
                     <li><a href="syllabus.html">Syllabus</a></li>\

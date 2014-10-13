@@ -1,0 +1,12 @@
+#office-hours {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+#office-hours td, #office-hours th {
+	width: 16%;
+	vertical-align: top;
+	padding: 10px 15px;
+	display: inline-block;
+}
