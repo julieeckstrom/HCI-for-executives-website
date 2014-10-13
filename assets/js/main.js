@@ -10,7 +10,6 @@ $(document).ready(function() {
 	// handles the carousel thumbnails
 	$('.carousel-thumb').click( function(){
 	    var id_selector = $(this).attr("id");
-	    console.log(id_selector);
 	    var id = id_selector.substr(id_selector.length -1);
 	    id = parseInt(id);
 	    $('#homework-carousel').carousel(id);
