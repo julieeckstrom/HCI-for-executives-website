@@ -48,6 +48,22 @@ header {
 					}
 				}
 			}
+
+			#hamburger {
+				cursor: pointer;
+				display: none;
+				padding-top: 11.5px;
+				padding-bottom: 11.5px;	
+				padding-left: 5.5%;
+
+				div {
+					background-color: #ccc;
+				    height: 5px;
+				    width: 35px;
+					transition-property: opacity;
+					transition-duration: .2s;
+				}
+			}
 		}
 	}
 
@@ -57,7 +73,6 @@ header {
 		height: 6px;
 		display: block;
 	}
-
 }
 
 #mobile_nav {
@@ -67,16 +82,110 @@ header {
     width: 290px;
     height: 100%;
     background-color: #2B2B2B;
+
+    #icon-close {
+		cursor: pointer;
+		color: #eaeaea;
+		font-family: @body-font;
+		font-weight: 700;
+		font-size: 16pt;	
+		padding-left: 30px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		transition-property: opacity;
+		transition-duration: .2s;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	.m-nav-item {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 30px;
+		border-top: solid 1px;
+		border-top-color: #000;
+
+		.m-nav-link {
+			text-decoration: none;
+			color: #eaeaea;
+			font-family: @body-font;
+			font-weight: 300;
+			font-size: 16pt;
+			letter-spacing: 2px;
+			transition-property: opacity;
+			transition-duration: .2s;
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+
+		#m-nav-item-last {
+			border-bottom: solid 1px;
+			border-bottom-color: #000;	
+		}
+	}
+}
+
+#middle {
+	margin-top: 4px;
+	margin-bottom: 4px;	
 }
 
 #on-mobile {
 	color: #EE6363;
 }
 
+
+
 /* Footer */
 
-#footer-container {
-	max-width: @max-width;
-	margin: 0 auto;	
+footer {
+	display: block;
+	width: 100%;
+	margin-top: 200px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fff;
+	border-top: solid 1px;
+	color: #eaeaea;
+
+	#footer-container {
+		max-width: @max-width;
+		margin: 0 auto;	
+	}
+
+	p {
+		text-align: center;
+		color: #999;
+		font-family: @body-font;
+		font-size: 9pt;	
+		letter-spacing: 1px;
+	}
+
+	a {
+		color: #666;
+		text-decoration: none;
+		border-bottom: dotted 1px;
+
+		&:hover {
+			color: #EE3B3B;				
+		}	
+	}
 }
 
+
+/* Responsive */
+
+@media screen and (max-width: 868px) {
+	#main_nav {
+		display: none;	
+	}
+	
+	#hamburger {
+		display: block;	
+	}
+	
+}
