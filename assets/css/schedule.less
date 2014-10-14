@@ -1,3 +1,5 @@
+/** List in schedule header **/
+
 .two-col {
 	width: 47%;
 	display: inline-block;
@@ -8,17 +10,7 @@
 	padding-right: 4%;	
 }
 
-#schedule, #today {
-	margin-left: 1.5%;
-	margin-right: 1.5%;
-	.body-border;
-}
-
-#schedule {
-	background-color: #fff;	
-	margin-top: 23px;
-	padding: 30px 0;
-}
+/** sticky Monday and Wednesday **/
 
 #days {
 	width: 100%;
@@ -31,6 +23,16 @@
 		padding-top: 7px;
 		padding-bottom: 5px;
 	}
+
+	&.days-moving {
+		max-width: 932px !important;
+		background: #444;	
+	}
+
+	&.stick-days {
+		position: fixed;
+		top: 53px;
+	}
 }
 
 #days-placeholder {
@@ -38,53 +40,129 @@
 	display: none;
 }
 
-.stick-days {
-	position: fixed;
-	top: 53px;
-}
+/** Main schedule css **/
 
-.days-moving {
-	max-width: 932px !important;
-	background: #444;	
-}
+#schedule {
+	padding: 30px 0;
 
-#today {
-	position: fixed;
-	left: 90px;
-}
+	.week {
+		padding-bottom: 70px;
+		border-top: 1px solid #cccccc;
 
-#today-button {
-	background-color: #FCC7C7;
-	text-align: center;
-	margin-bottom: 10px;
-	width: 65px;
-	height: 65px;
-	border-radius: 50%;
+		.day {
+			height: auto;
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
 
-	a {
-		display: block;
-		padding: 17px 5px 0px 5px;
-		font-size: 14px;
-		letter-spacing: .75px;
-		line-height: 15px;
-		color: #EE3B3B;
-		text-decoration: none;
-		font-family: @body-font;
-	}
+			.date {
+				padding-top: 18px;
+				padding-bottom: 15px;
+				text-align: center;
+				border-bottom: 1px solid #ccc;
 
-	&:hover {
-		background-color: #F89F9F;
+				h2 {
+					text-transform: uppercase;
+					font-family: @body-font;
+					font-size: 16px;
+					letter-spacing: 1.5px;
+					font-weight: bold;	
+				}
 
-		a {
-			color: #BE2F2F;
+				&.right-border {
+					border-right: 1px solid #ccc;
+				}
+			}
+
+			.readings {
+				padding: 0 30px;
+
+				ul {
+					font-family: @body-font;
+					font-size: 10pt;
+					line-height: 17pt;
+					letter-spacing: .3px;
+					color: #282828;
+					list-style-type: disc;
+					padding-left: 15px;
+				}
+
+				h4 {
+					margin: 15px 0 5px 0;
+					text-transform: uppercase;
+					font-family: @body-font;
+					font-size: 11px;
+					letter-spacing: 1.5px;
+					font-weight: bold;
+				}
+
+				p {
+					margin: 25px 0 25px 0;
+					font-family: @body-font;
+					font-size: 16px;
+					line-height: 26px;
+					letter-spacing: 0.5px;
+				}
+
+				a {
+					text-decoration: none;
+					border-bottom: dotted 1px;
+					color: #EE3B3B;	
+				}
+
+				.recommended {
+					opacity: .4;
+					transition: .7s all;
+
+					&:hover {
+						opacity: 1;	
+						transition: .7s all;
+					}
+				}
+			}
 		}
 	}
 }
 
-#arrow {
-	width: auto;
-	height: auto;
+/** This week button **/
+
+#today {
 	position: fixed;
+	left: 90px;
+
+	#today-button {
+		background-color: #FCC7C7;
+		text-align: center;
+		margin-bottom: 10px;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+
+		a {
+			display: block;
+			padding: 17px 5px 0px 5px;
+			font-size: 14px;
+			letter-spacing: .75px;
+			line-height: 15px;
+			color: #EE3B3B;
+			text-decoration: none;
+			font-family: @body-font;
+		}
+
+		&:hover {
+			background-color: #F89F9F;
+
+			a {
+				color: #BE2F2F;
+			}
+		}
+	}
+
+	#arrow {
+		width: auto;
+		height: auto;
+		position: fixed;
+	}
 }
 
 .pointUp:before, .pointUp:after, .pointDown:before, .pointDown:after, .pointRight:before, .pointRight:after {
@@ -208,84 +286,5 @@
 	    -ms-transform:rotate(180deg);
 	    top: -60px;
 	    left: 72px;
-	}
-}
-
-
-.week {
-	padding-bottom: 70px;
-	border-top: 1px solid #cccccc;
-
-	.day {
-		height: auto;
-		width: 50%;
-		display: inline-block;
-		vertical-align: top;
-
-		.date {
-			padding-top: 18px;
-			padding-bottom: 15px;
-			text-align: center;
-			border-bottom: 1px solid #ccc;
-
-			h2 {
-				text-transform: uppercase;
-				font-family: @body-font;
-				font-size: 16px;
-				letter-spacing: 1.5px;
-				font-weight: bold;	
-			}
-
-			&.right-border {
-				border-right: 1px solid #ccc;
-			}
-		}
-
-		.readings {
-			padding: 0 30px;
-
-			ul {
-				font-family: @body-font;
-				font-size: 10pt;
-				line-height: 17pt;
-				letter-spacing: .3px;
-				color: #282828;
-				list-style-type: disc;
-				padding-left: 15px;
-			}
-
-			h4 {
-				margin: 15px 0 5px 0;
-				text-transform: uppercase;
-				font-family: @body-font;
-				font-size: 11px;
-				letter-spacing: 1.5px;
-				font-weight: bold;
-			}
-
-			p {
-				margin: 25px 0 25px 0;
-				font-family: @body-font;
-				font-size: 16px;
-				line-height: 26px;
-				letter-spacing: 0.5px;
-			}
-
-			a {
-				text-decoration: none;
-				border-bottom: dotted 1px;
-				color: #EE3B3B;	
-			}
-
-			.recommended {
-				opacity: .4;
-				transition: .7s all;
-
-				&:hover {
-					opacity: 1;	
-					transition: .7s all;
-				}
-			}
-		}
 	}
 }
