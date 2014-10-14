@@ -1,5 +1,5 @@
 var main = function() {
-   	$('#hamburger').click(function(){
+   	$('#menu-icon').click(function(){
 	   
     $('#mobile_nav').animate({left: '0px'}, 200); 
     $('body').animate({left: '290px'}, 200);
@@ -8,11 +8,11 @@ var main = function() {
 	
   });
   
-  $('#hamburger').hover(function(){
-		$('#hamburger div').css('opacity', '.5');	
+  $('#menu-icon').hover(function(){
+		$('#menu-icon div').css('opacity', '.5');	
 	}, 
 	function(){
-		$('#hamburger div').css('opacity', '1');	
+		$('#menu-icon div').css('opacity', '1');	
 	}); 
     
     $('#icon-close').click(function(){
@@ -32,10 +32,10 @@ var main = function() {
 	});
 	
 	$('#contentLayer').hover(function(){
-		$('#hamburger div').css('opacity', '.5');	
+		$('#menu-icon div').css('opacity', '.5');	
 	}, 
 	function(){
-		$('#hamburger div').css('opacity', '1');	
+		$('#menu-icon div').css('opacity', '1');	
 	});
 };
 
