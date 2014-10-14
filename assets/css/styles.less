@@ -69,7 +69,11 @@ a {
 	border-bottom: dotted 1px;
 
 	&:hover {
-		color: #333;
+		color: @body-text-color;
+	}
+
+	&:visited {
+		color: &darker-accent-color;
 	}
 }
 
@@ -119,7 +123,7 @@ a {
 
 			a {
 				text-decoration: none;
-				color: #EE3B3B;
+				color: @accent-color;
 				opacity: 1;
 				border-bottom: dotted 1px;
 			}
@@ -167,7 +171,7 @@ section {
 		p {
 			font-size: 11pt;
 			font-weight: 700;
-			color: #EE3B3B;
+			color: @accent-color;
 			font-style: italic;
 		}
 
@@ -196,7 +200,7 @@ section {
 		font-size: 12pt;
 		line-height: 21pt;
 		letter-spacing: .3px;
-		color: #333;
+		color: @body-text-color;
 		padding-top: 15px;
 	}
 
@@ -222,7 +226,7 @@ section {
 		font-family: @body-font;
 		font-weight: 300;
 		font-size: 16pt;
-		color: #333;
+		color: @body-text-color;
 
 		&.first-header {
 			padding-top: 40px !important;
@@ -236,7 +240,7 @@ section {
 		font-family: @body-font;
 		font-weight: 600;
 		font-size: 12pt;
-		color: #333;	
+		color: @body-text-color;	
 	}
 
 	.bold {
