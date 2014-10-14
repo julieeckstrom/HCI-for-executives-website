@@ -9,8 +9,7 @@ document.write('\
                         <div></div>\
                         <div id="middle"></div>\
                         <div></div>\
-                    </div>\
-                    <div id="mobile_title">Intro to HCI for Technology Executives 2014</div>\
+                    </div><div id="mobile_title">Intro to HCI for Technology Executives 2014</div>\
                 </div>\
                 <ul id="main_nav">\
                     <li id="first-nav-item"><a href="index.html">Intro to HCI for Technology Executives 2014</a></li>\
