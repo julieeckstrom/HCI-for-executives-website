@@ -1,6 +1,5 @@
 document.write('\
 \
-    <h3 class="first-header">Homework 2: Paper Prototype of an Interface</h3>\
     <p><span class="bold">Assigned: Wed, Nov. 6, 2013; Due: Wed, Nov. 13, 2013</bold></p>\
     <p>Using the information that you collected in Homework 1 for what is good and bad about the real appliance\'s user interface for the tasks you designed, now you are going to make <span class="bold">Sketches</span> and a <span class="bold">Paper Prototype</span> of a (hopefully) better design in homework 2. Following the redesign, in the next homework (homework 3), you will run a usability evaluation of the prototype and revise your design based on the feedback you get.</p>\
     <p>Turn in all parts of this homework on blackboard.</p>\

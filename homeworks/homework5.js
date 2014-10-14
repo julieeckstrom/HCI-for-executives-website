@@ -1,5 +1,5 @@
 document.write('\
-	<h3 class="first-header">Homework 5: Heuristic Evaluation of Each Other\'s Implementations</h3>\
+\
     <p><span class="bold">Assigned: Mon, Nov. 25, 2013; Due: Mon, Dec. 2, 2013 </span><span class="italic">(note: no late turn-ins for HW5!)</span></p>\
     <p>Each person will evaluate the user interfaces of two other people in the class. After you turn in your system for Homework 4, the TA will e-mail you the two systems you are to evaluate. You can also see the assignment of systems to people on Blackboard.</p>\
     <p>You will be getting two (2) systems. You should write a heuristic evaluation of the site using <a href="http://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Neilsen\'s Ten Usability Heuristics</a>. (There are lots of different lists of heuristics, but for this assignment, <span class="italic">you must use only</span> the ones that <a href="http://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen lists</a>). Although two people are assigned to evaluate each project. you should do the evaluation individually.</p>\

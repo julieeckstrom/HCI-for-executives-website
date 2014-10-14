@@ -1,5 +1,5 @@
 document.write('\
-	<h3 class="first-header">Homework 6: Revised Interfaces Based on HE</h3>\
+\
     <p><span class="bold">Assigned: Mon, Dec. 2, 2013; Due: Mon, Dec. 9, 2013. <span class="italic">(NOTE: The last day to turn in any late homeworks is Wed., Dec. 11, 2013, so we have time to grade them)</span></span></p>\
     <p>The TAs will send to you the two evaluations from your classmates. In this assignment, you should revise your interface based on that feedback. It is very important that you respond to each criticism, and avoid changing each good thing mentioned. In general, you should make the recommended changes. However, if you have a good reason for not making a fix, you can make that argument in your report. Your grade on this assignment will depend primarily on the quality of your final, resulting interface, and your responses to your classmates\' comments. Your grade will be lowered if we do not agree with your reason for not fixing problems that were brought up in your previous user studies, and by your classmates in their heuristic analyses.</p>\
     <p>The <span class="bold">deliverables</span> for this assignment are:</p>\

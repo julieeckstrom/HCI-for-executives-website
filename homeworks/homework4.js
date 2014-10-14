@@ -1,5 +1,5 @@
 document.write('\
-	<h3 class="first-header">Homework 4: Implementation of the Prototype</h3>\
+\
     <p><span class="bold">Assigned: Mon, Nov. 18, 2013; Due: Mon, Nov. 25, 2013</span><span class="italic"> (note: no late turn-ins for HW4!)</span></p>\
     <p>Using the design that resulted from all your testing and revisions from Homework 3, you are now going to implement the interface. You can use any way to implement your prototype such as those that were discussed in class (see Lecture 7 which includes links to various places to download versions of the implementation tools).</p>\
     <h4>Part A:</h4>\

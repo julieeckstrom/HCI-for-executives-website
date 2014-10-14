@@ -1,6 +1,5 @@
 document.write('\
 \
-	<h3 class="first-header">Homework 0: Pick a Device</h3>\
     <p>Due: By midnight on Tuesday, Oct. 29, 2014; conflicts resolved in class on Wednesday, October 30, 2014.</p>\
     <p>All of the assignments in this course will be individual. Most of them will involve creating a simulated user interface for a complex device. Each student will pick a different device. However, for a multi-function device, multiple people can pick the same device as long as they pick different functions on that device (for example, someone can do basic setup of a DVD and someone else can do setting of timed recordings on a DVD-R). You will use the device you select for the entire course, so choose wisely. You will need to pick a device with some complexity; that is, with some tasks that are difficult to do.</p>\
     <p>I have put everyone who is registered in random order in a GoogleDoc spreadsheet. Everyone should enter three or more choices, and the make sure that the people above you didn\'t pick what you selected. We will try to give everyone their choices, but everyone must have unique device.</p>\

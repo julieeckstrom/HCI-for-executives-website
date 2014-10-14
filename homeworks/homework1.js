@@ -1,6 +1,5 @@
 document.write('\
 \
-	<h3 class="first-header">Homework 1: Contextual Inquiry and Analysis</h3>\
     <p><span class="bold">Assigned: Wed, October 30, 2013;   Due: Wed, Nov. 6, 2013</bold></p>\
     <p>(See <a href="syllabus.html#submit">how to submit homeworks</a> -- in summary, you will submit on blackboard. See also the <a href="syllabus.html#grading">grading policies</a>.)</p>\
     <p>The device choices are on the GoogleDocs page (see Blackboard for a link to it)</p>\

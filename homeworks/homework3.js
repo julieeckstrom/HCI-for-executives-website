@@ -1,5 +1,5 @@
 document.write('\
-	<h3 class="first-header">Homework 3: Two Usability Evaluations of Paper Prototypes</h3>\
+\
     <p><span class="bold">Assigned: Wed, Nov. 13, 2013; Due: Mon, Nov. 18, 2013</span></p>\
     <p>Using the paper prototype you created in Homework 2, you are now going to run a usability evaluation of that prototype with one or more real people (users), revise the paper prototype to try to fix any problems found, and then run one or more <span class="italic">additional</span> people on the revised version.</p>\
     <h4>Part A:</h4>\
