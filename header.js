@@ -5,11 +5,11 @@ document.write('\
         <nav>\
             <div id="nav-container">\
                 <div id="hamburger">\
-                    <div id="menu-icon">
+                    <div id="menu-icon">\
                         <div></div>\
                         <div id="middle"></div>\
                         <div></div>\
-                    </div>
+                    </div>\
                     <span id="mobile_title">Intro to HCI for Technology Executives 2014</span>\
                 </div>\
                 <ul id="main_nav">\
