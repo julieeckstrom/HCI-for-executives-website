@@ -30,7 +30,7 @@ article {
 }
 
 #navy {
-	background-color: #26466D	;
+	background-color: #26466D;
 }
 
 #teal {
@@ -55,7 +55,6 @@ article {
     z-index: 1;
 	cursor: pointer;
 }
-
 
 /* Extras */
 
@@ -89,7 +88,6 @@ article {
 	}
 }
 
-
 /* Main Content */ 
 
 section {
@@ -119,150 +117,103 @@ section {
 	}
 }
 
-.content nav {
-	padding-top: 40px;	
-}
+.content {
+	nav {
+		padding-top: 40px;	
 
-.content nav p {
-	font-size: 11pt;
-	font-weight: 700;
-	color: #EE3B3B;
-	font-style: italic;
-}
+		p {
+			font-size: 11pt;
+			font-weight: 700;
+			color: #EE3B3B;
+			font-style: italic;
+		}
 
-.content nav ul li {
-	display: inline-block;
-	padding-right: 2.5%;
-}
+		ul li {
+			display: inline-block;
+			padding-right: 2.5%;
 
-.content nav ul li a {
-	color: #999;
-	font-family: @body-font;
-	font-size: 9pt;
-	line-height: 20pt;
-	font-weight: 300;
-	letter-spacing: 1.5px;
-}
+			a {
+				color: #999;
+				font-family: @body-font;
+				font-size: 9pt;
+				line-height: 20pt;
+				font-weight: 300;
+				letter-spacing: 1.5px;
+			}
+		}
+	}
 
-.content p, .content ul {
-	width: 100%;
-}
+	p, ul {
+		width: 100%;
+	}
 
-.content p, .content ul, .intext, .content ol {
-	font-family: @body-font;
-	font-weight: 300;	
-	font-size: 12pt;
-	line-height: 21pt;
-	letter-spacing: .3px;
-	color: #333;
-	padding-top: 15px;
-}
+	p, ul, ol {
+		font-family: @body-font;
+		font-weight: 300;	
+		font-size: 12pt;
+		line-height: 21pt;
+		letter-spacing: .3px;
+		color: #333;
+		padding-top: 15px;
+	}
 
-.content ul, .content ol {
-	padding-left: 20px;
-}
+	ul, ol {
+		padding-left: 20px;
+	}
 
-.content ul {
-	list-style-type: disc;
-}
+	ul {
+		list-style-type: disc;
 
-.content ol {
-	list-style: decimal;
-}
+		li {
+			margin-bottom: 10px;
+		}
+	}
 
-.content ul li {
-	margin-bottom: 10px;
-}
+	ol {
+		list-style: decimal;
+	}
 
-.content a {
-	text-decoration: none;
-	color: @accent-color;
-}
+	a {
+		text-decoration: none;
+		color: @accent-color;
 
-.content a:hover {
-	color: #333;
-}
+		&:hover {
+			color: #333;
+		}
+	}
 
-.content h3 {
-	padding-top: 80px;
-	padding-bottom: 5px;	
-	font-family: @body-font;
-	font-weight: 300;
-	font-size: 16pt;
-	color: #333;
-}
+	h3 {
+		padding-top: 80px;
+		padding-bottom: 5px;	
+		font-family: @body-font;
+		font-weight: 300;
+		font-size: 16pt;
+		color: #333;
 
-.first-header {
-	padding-top: 40px !important;
-}
+		&.first-header {
+			padding-top: 40px !important;
+		}
 
-.content h4 {
-	padding-top: 30px;
-	padding-bottom: 0px;	
-	font-family: @body-font;
-	font-weight: 600;
-	font-size: 12pt;
-	color: #333;	
-}
+	}
 
-.admin {
-	width: 32%;	
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 50px;
-	padding-bottom: 40px;
-}
+	h4 {
+		padding-top: 30px;
+		padding-bottom: 0px;	
+		font-family: @body-font;
+		font-weight: 600;
+		font-size: 12pt;
+		color: #333;	
+	}
 
-.dept {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-top: solid 1px;
-	text-align: center;
-	font-family: @body-font;
-	font-weight: 100;
-	font-size: 11pt;
-	line-height: 21pt;	
-	color: #999;	
-}
+	.bold {
+		font-weight: bold;
+	}
 
-#HCII {
-	border-right: solid 1px;
-	border-left: solid 1px;
-}
+	.italic {
+		font-style: italic;
+	}
 
-#Tepper {
-	border-right: solid 1px;
-	border-left: solid 1px;	
 }
-
-.admin strong {
-	font-size: 14pt;	
-}
-
-.admin p {
-	font-size: 11pt;
-	padding-top: 0px;
-}
-
-.admin a{
-	text-decoration: none;
-	border-bottom: dotted 1px;	
-	color: #999;
-}
-
-.admin img {
-	width: 100%;
-	padding-bottom: 10px;	
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.italic {
-	font-style: italic;
-}
-
 
 /* Sidebar Content */
 
@@ -278,20 +229,19 @@ aside {
 	padding-top: 30px;
 	background-color: #fff;
 	.body-border;
-}
 
-.left-aside {
-	margin-left: 1.5%;
-}
+	&.left-aside {
+		margin-left: 1.5%;
+	}
 
-aside p {
-	padding-bottom: 30px;
-	font-family: @body-font;
-	font-weight: 300;
-	font-size: 10pt;
-	line-height: 14pt;	
+	p {
+		padding-bottom: 30px;
+		font-family: @body-font;
+		font-weight: 300;
+		font-size: 10pt;
+		line-height: 14pt;	
+	}
 }
-
 
 
 /* BEGINNING OF RESPONSIVE VERSIONS */
