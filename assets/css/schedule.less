@@ -8,35 +8,35 @@
 	padding-right: 4%;	
 }
 
-#title ul li {
-	font-family: @body-font;
-	font-weight: 300;
-	font-size: 12pt;	
-	line-height: 18pt;
-	padding-bottom: 10px;
-	letter-spacing: 0px;
-	width: 95%;
-}
+#title {
+	h1 {
+		font-family: @h1-font;
+		font-weight: 100;
+		font-size: 20pt;	
+		line-height: 28pt;
+		padding-bottom: 25px;
+	}
+	ul li {
+		font-family: @body-font;
+		font-weight: 300;
+		font-size: 12pt;	
+		line-height: 18pt;
+		padding-bottom: 10px;
+		letter-spacing: 0px;
+		width: 95%;
 
-#title ul li a {
-	text-decoration: none;
-	color: #EE3B3B;
-	opacity: 1;
-	border-bottom: dotted 1px;
-}
+		a {
+			text-decoration: none;
+			color: #EE3B3B;
+			opacity: 1;
+			border-bottom: dotted 1px;
+		}
 
-#title ul li a:hover {
-	opacity: .6;
+		&:hover {
+			opacity: .6;
+		}
+	}
 }
-
-#title h1 {
-	font-family: @h1-font;
-	font-weight: 100;
-	font-size: 20pt;	
-	line-height: 28pt;
-	padding-bottom: 25px;
-}
-
 
 #schedule, #today {
 	margin-left: 1.5%;
