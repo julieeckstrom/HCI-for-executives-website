@@ -63,6 +63,16 @@ article {
 	overflow: hidden;	
 }
 
+a {
+	text-decoration: none;
+	color: @accent-color;
+	border-bottom: dotted 1px;
+
+	&:hover {
+		color: #333;
+	}
+}
+
 /* Title  */
 
 #title {
@@ -204,15 +214,6 @@ section {
 
 	ol {
 		list-style: decimal;
-	}
-
-	a {
-		text-decoration: none;
-		color: @accent-color;
-
-		&:hover {
-			color: #333;
-		}
 	}
 
 	h3 {
