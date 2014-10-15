@@ -11,6 +11,10 @@ $(document).ready(function() {
 		$('#homework-thumbs li').css('display', 'block');
 	});
 
+	$('#homework-thumbs li').click(function(){
+		$('#homework-thumbs li').css('display', 'none');
+	});
+
 	$('#main_nav li a').each(function(){
 		var path = window.location.pathname;
 		var loc = path.substring(path.lastIndexOf('/')+1);
