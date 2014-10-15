@@ -12,6 +12,7 @@ $(document).ready(function() {
 	});
 
 	$('#homework-thumbs li').click(function(){
+		console.log("here");
 		$('#homework-thumbs li').css('display', 'none');
 	});
 
