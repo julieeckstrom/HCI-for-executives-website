@@ -9,8 +9,10 @@ $(document).ready(function() {
 
 	$('#homework-thumbs').click(function(){
 		if($('#homework-thumbs li').css('display', 'none')) {
+			console.log('here1');
 			$('#homework-thumbs li').css('display', 'block');
 		} else {
+			console.log('here2');
 			$('#homework-thumbs li').css('display', 'none');
 		}
 	});
