@@ -8,12 +8,11 @@ Date.prototype.getWeek = function() {
 $(document).ready(function() {
 
 	$('#homework-thumbs').click(function(){
-		$('#homework-thumbs li').css('display', 'block');
-	});
-
-	$('#homework-thumbs li').click(function(){
-		console.log("here");
-		$('#homework-thumbs li').css('display', 'none');
+		if($('#homework-thumbs li').css('display', 'none') {
+			$('#homework-thumbs li').css('display', 'block');
+		} else {
+			$('#homework-thumbs li').css('display', 'none');
+		}
 	});
 
 	$('#main_nav li a').each(function(){
