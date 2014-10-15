@@ -8,7 +8,7 @@ Date.prototype.getWeek = function() {
 $(document).ready(function() {
 
 	$('#homework-thumbs').click(function(){
-		if($('#homework-thumbs li').css('display', 'none') {
+		if($('#homework-thumbs li').css('display', 'none')) {
 			$('#homework-thumbs li').css('display', 'block');
 		} else {
 			$('#homework-thumbs li').css('display', 'none');
