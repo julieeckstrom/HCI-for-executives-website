@@ -7,6 +7,10 @@ Date.prototype.getWeek = function() {
 
 $(document).ready(function() {
 
+	$('#homework-thumbs').click(function(){
+		$('#homework-thumbs li').css('display', 'block');
+	});
+
 	$('#main_nav li a').each(function(){
 		var path = window.location.pathname;
 		var loc = path.substring(path.lastIndexOf('/')+1);
