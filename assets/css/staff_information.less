@@ -88,11 +88,26 @@
 }
 
 .admin {
-	width: 32%;	
+	width: 22%;	
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 50px;
 	padding-bottom: 40px;
+	margin-left: 1.5%;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+
+	.dept {
+		padding-top: 10px;
+		text-align: center;
+		font-family: @body-font;
+		font-weight: 200;
+		font-size: 11pt;
+		line-height: 21pt;	
+		color: #999;	
+	}
 
 	strong {
 		font-size: 14pt;	
@@ -100,7 +115,7 @@
 
 	p {
 		font-size: 11pt;
-		padding-top: 0px;
+		padding-top: 0px !important;
 	}
 
 	a{
@@ -110,23 +125,12 @@
 	}
 
 	img {
-		width: 100%;
+		width: 100% !important;
 		padding-bottom: 10px;
 		.body-border;	
 	}
 }
 
-.dept {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-top: solid 1px;
-	text-align: center;
-	font-family: @body-font;
-	font-weight: 100;
-	font-size: 11pt;
-	line-height: 21pt;	
-	color: #999;	
-}
 
 @media screen and (max-width: 500px) {
 	.TA {
