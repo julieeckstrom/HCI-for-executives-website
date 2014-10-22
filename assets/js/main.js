@@ -97,7 +97,7 @@ $(document).ready(function() {
 	        if ($(this).offset().top > $(window).scrollTop())
 	            return false; // Exit loop
 	        
-	        date = $(this);
+	        $date = $(this);
 	    });
 	    
 	    sticky.empty().append(date.clone());
