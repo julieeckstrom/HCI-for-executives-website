@@ -92,12 +92,13 @@ $(document).ready(function() {
 	        sticky = $('<div id="sticky">').appendTo('body');
 	    
 	    $('.date').each(function () {
+	    	console.log("here");
 	        if ($(this).parents('#sticky').length) return true;
 	        
 	        if ($(this).offset().top > $(window).scrollTop())
 	            return false; // Exit loop
 	        
-	        $date = $(this);
+	        date = $(this);
 	    });
 	    
 	    sticky.empty().append(date.clone());
