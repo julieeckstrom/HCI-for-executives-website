@@ -95,8 +95,7 @@ $(document).ready(function() {
 	        if (window_top > days_div_top) {
 	            $('#today').addClass('moving');
 	        } else {
-	            $('#days').removeClass('moving');
-	        	}
+	            $('#today').removeClass('moving');
 	    	}
 	    });
 });
