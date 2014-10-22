@@ -61,17 +61,26 @@ $(document).ready(function() {
 			if( $(window).scrollTop() > pageTopToDivBottom ) {
 			    // Above 
 			    $('#today-button').removeClass('onWeek');
+			    $('#today-button').removeClass('left');
+			    $('#today-button').removeClass('down');
 				$('#today-button').addClass('offWeek');
+				$('#today-button').addClass('up');
 
 			} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
 			    // Below
 			    $('#today-button').removeClass('onWeek');
+			    $('#today-button').removeClass('up');
+			    $('#today-button').removeClass('left');
 				$('#today-button').addClass('offWeek');
+				$('#today-button').addClass('down');
 
 			} else {
 				// Next to
 			    $('#today-button').removeClass('offWeek');
+			    $('#today-button').removeClass('up');
+			    $('#today-button').removeClass('down');
 				$('#today-button').addClass('onWeek');
+				$('#today-button').addClass('left');
 			}
 		}
 
