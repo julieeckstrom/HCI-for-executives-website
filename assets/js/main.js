@@ -56,26 +56,28 @@ $(document).ready(function() {
 			currentWeekDiv = $('#' + currentWeek);
 			pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
 			scrolledPlusViewable = $(window).scrollTop()+$(window).height();
-		}
-		// First check if the element is outside the viewable area:
-		if( $(window).scrollTop() > pageTopToDivBottom ) {
-		    console.log( "Element hidden (above viewable area)" );
-		    $('#arrow').removeClass('pointDown');
-		    $('#arrow').removeClass('pointRight');
-		    $('#arrow').addClass('pointUp');
 
-		} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
-		    console.log( "Element hidden (below viewable area)" );
-		    $('#arrow').removeClass('pointUp');
-		    $('#arrow').removeClass('pointRight');
-			$('#arrow').addClass('pointDown');
+			// First check if the element is outside the viewable area:
+			if( $(window).scrollTop() > pageTopToDivBottom ) {
+			    console.log( "Element hidden (above viewable area)" );
+			    $('#arrow').removeClass('pointDown');
+			    $('#arrow').removeClass('pointRight');
+			    $('#arrow').addClass('pointUp');
 
-		} else {
-		    console.log( "Element visible! (within viewable area)" );
-		    $('#arrow').removeClass('pointUp');
-		    $('#arrow').removeClass('pointDown');
-			$('#arrow').addClass('pointRight');
+			} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
+			    console.log( "Element hidden (below viewable area)" );
+			    $('#arrow').removeClass('pointUp');
+			    $('#arrow').removeClass('pointRight');
+				$('#arrow').addClass('pointDown');
+
+			} else {
+			    console.log( "Element visible! (within viewable area)" );
+			    $('#arrow').removeClass('pointUp');
+			    $('#arrow').removeClass('pointDown');
+				$('#arrow').addClass('pointRight');
+			}
 		}
+
 
 	    if ($('#days').length) {
 	        var days_div_top = $('#days').height();
