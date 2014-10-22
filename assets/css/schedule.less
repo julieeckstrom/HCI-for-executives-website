@@ -200,6 +200,7 @@
 		#today-button {
 			border-radius: 0;
 			background-color: transparent;
+			background-repeat: no-repeat;
 			background-image: url('../images/arrow.png');
 			height: 40px;
 			width: 40px;
@@ -260,7 +261,7 @@
 			background-color: inherit;
 			height: 34px;
 			margin-bottom: 10px;
-			width: 147px;
+			width: 157px;
 			border-radius: 3px;
 
 			&.down, &.left, &.up {
@@ -287,10 +288,10 @@
 				}
 			}
 		}
-	}
 
-	span.button-text {
-		display: inline;
+		span.button-text {
+			display: inline;
+		}
 	}
 }
 
@@ -301,6 +302,7 @@
 		#today-button {
 			border-radius: 0;
 			background-color: transparent;
+			background-repeat: no-repeat;
 			background-image: url('../images/arrow@2x.png');
 			background-size: 40px 40px;
 			height: 40px;
@@ -312,6 +314,33 @@
 
 			&.onWeek, &.offWeek {
 				background-color: transparent;
+			}
+
+			&.left {
+				transition: all 0.3s ease-out;
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+
+			&.up {
+				transition: all 0.3s ease-out;
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+
+			&.down {
+				transition: all 0.3s ease-out;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);	
 			}
 		}
 
