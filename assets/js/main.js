@@ -37,50 +37,50 @@ $(document).ready(function() {
 	    $(this).addClass('selected');
 	});
 
-/*
+
 	$(window).scroll(function() {
-	var window_top = $(window).scrollTop();
-	var width = window.innerWidth;
+		var window_top = $(window).scrollTop();
+		var width = window.innerWidth;
 
-	var today = new Date();
-	var currentWeek = today.getWeek();
+		var today = new Date();
+		var currentWeek = today.getWeek();
+		console.log(currentWeek);
 
-	var currentWeekDiv = $('#' + currentWeek);
-	var pageTopToDivBottom   = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
-	var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
+		var currentWeekDiv = $('#' + currentWeek);
+		var pageTopToDivBottom   = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
+		var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
 
-	// First check if the element is outside the viewable area:
-	if( $(window).scrollTop() > pageTopToDivBottom ) {
-	    console.log( "Element hidden (above viewable area)" );
-	    $('#arrow').removeClass('pointDown');
-	    $('#arrow').removeClass('pointRight');
-	    $('#arrow').addClass('pointUp');
+		// First check if the element is outside the viewable area:
+		if( $(window).scrollTop() > pageTopToDivBottom ) {
+		    console.log( "Element hidden (above viewable area)" );
+		    $('#arrow').removeClass('pointDown');
+		    $('#arrow').removeClass('pointRight');
+		    $('#arrow').addClass('pointUp');
 
-	} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
-	    console.log( "Element hidden (below viewable area)" );
-	    $('#arrow').removeClass('pointUp');
-	    $('#arrow').removeClass('pointRight');
-		$('#arrow').addClass('pointDown');
+		} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
+		    console.log( "Element hidden (below viewable area)" );
+		    $('#arrow').removeClass('pointUp');
+		    $('#arrow').removeClass('pointRight');
+			$('#arrow').addClass('pointDown');
 
-	} else {
-	    console.log( "Element visible! (within viewable area)" );
-	    $('#arrow').removeClass('pointUp');
-	    $('#arrow').removeClass('pointDown');
-		$('#arrow').addClass('pointRight');
-	}
+		} else {
+		    console.log( "Element visible! (within viewable area)" );
+		    $('#arrow').removeClass('pointUp');
+		    $('#arrow').removeClass('pointDown');
+			$('#arrow').addClass('pointRight');
+		}
 
-    if ($('#days').length) {
-        var days_div_top = $('#days').height();
-        if (window_top > days_div_top) {
-            $('#days').addClass('stick-days');
-            $('#days').addClass('days-moving');
-            $('#days-placeholder').css({display: 'block'});
-        } else {
-            $('#days').removeClass('stick-days');
-            $('#days').removeClass('days-moving');
-            $('#days-placeholder').css({display: 'none'});
-        	}
-    	}
-    });
-*/
+	    if ($('#days').length) {
+	        var days_div_top = $('#days').height();
+	        if (window_top > days_div_top) {
+	            $('#days').addClass('stick-days');
+	            $('#days').addClass('days-moving');
+	            $('#days-placeholder').css({display: 'block'});
+	        } else {
+	            $('#days').removeClass('stick-days');
+	            $('#days').removeClass('days-moving');
+	            $('#days-placeholder').css({display: 'none'});
+	        	}
+	    	}
+	    });
 });
