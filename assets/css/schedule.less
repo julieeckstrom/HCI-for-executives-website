@@ -12,6 +12,12 @@
 
 /** sticky Monday and Wednesday **/
 
+.identifier {
+	height: 450px;
+	width: 100%;
+	position: absolute;
+}
+
 #days {
 	width: 100%;
 	height: 30px;
@@ -199,11 +205,14 @@
 
 		#today-button {
 			border-radius: 0;
-			background-color: transparent;
 			background-repeat: no-repeat;
 			background-image: url('../images/arrow.png');
+			background-size: 20px 20px;
 			height: 40px;
 			width: 40px;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 2px 0px 0px #cecece;
 
 			a {
 				height: 100%;
