@@ -85,23 +85,4 @@ $(document).ready(function() {
 	    }
 	});
 
-	$(document).scroll(function () {
-	    var sticky = $('#sticky'), h1 = $('.date:first');
-	    
-	    if (!sticky.length)
-	        sticky = $('<div id="sticky">').appendTo('body');
-	    
-	    $('.date').each(function () {
-	        if ($(this).parents('#sticky').length) return true;
-	        
-	        if ($(this).offset().top > $(window).scrollTop())
-	            return false; // Exit loop
-	        
-	        date = $(this);
-	        console.log(date);
-	    });
-	    
-	    sticky.empty().append(date.clone());
-	});
-
 });
