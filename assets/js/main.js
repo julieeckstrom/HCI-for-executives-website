@@ -46,11 +46,11 @@ $(document).ready(function() {
 		var currentWeek = today.getWeek();
 		console.log(currentWeek);
 
-		var currentWeekDiv = $('#today-button a').attr('href', '#' + currentWeek);
+		$('#today-button a').attr('href', '#' + currentWeek);
 
-		//var currentWeekDiv = $('#' + currentWeek);
+		var currentWeekDiv = $('#' + currentWeek);
 		console.log(currentWeekDiv);
-		var pageTopToDivBottom  = currentWeekDiv.offset().top + $('#' + currentWeek).scrollHeight;
+		var pageTopToDivBottom  = currentWeekDiv.offset().top + currentWeekDiv.scrollHeight;
 		var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
 
 		// First check if the element is outside the viewable area:
