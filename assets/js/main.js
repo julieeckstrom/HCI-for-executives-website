@@ -88,7 +88,7 @@ $(document).ready(function() {
 	            $('#days-placeholder').css({display: 'none'});
 	        	}
 	    	}
-	    });
+	    }
 
 	    if ($('#today').length) {
 	        var days_div_top = $('#today').height();
@@ -97,5 +97,6 @@ $(document).ready(function() {
 	        } else {
 	            $('#today').removeClass('moving');
 	    	}
-	    });
+	    }
+	});
 });
