@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 		//var currentWeekDiv = $('#' + currentWeek);
 		console.log(currentWeekDiv);
-		var pageTopToDivBottom  = currentWeekDiv.offset().top + $('#' + currentWeek)[0].scrollHeight;
+		var pageTopToDivBottom  = currentWeekDiv.offset().top + $('#' + currentWeek).scrollHeight;
 		var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
 
 		// First check if the element is outside the viewable area:
