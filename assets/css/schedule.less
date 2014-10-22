@@ -212,6 +212,10 @@
 		height: 40px;
 		width: 40px;
 
+		&:active {
+			background-color: @accent-color !important;
+		}
+
 		#today-button {
 			border-radius: 0;
 			background-repeat: no-repeat;
@@ -228,10 +232,6 @@
 
 			&.onWeek, &.offWeek {
 				background-color: transparent;
-			}
-
-			&:active {
-				background-color: @accent-color !important;
 			}
 
 			&.left {
@@ -331,6 +331,10 @@
 		height: 40px;
 		width: 40px;
 
+		&:active {
+			background-color: @accent-color !important;
+		}
+
 		#today-button {
 			border-radius: 0;
 			background-color: transparent;
@@ -343,11 +347,7 @@
 			a {
 				height: 100%;
 			}
-
-			&:active {
-				background-color: @accent-color !important;
-			}
-
+			
 			&.onWeek, &.offWeek {
 				background-color: transparent;
 			}
