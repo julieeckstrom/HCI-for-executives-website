@@ -9,7 +9,6 @@ document.write('\
 	<link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />\
 \
 	<!-- JS -->\
-	<script type="text/javascript">less = { env: \'development\' };</script>\
 	<script type="text/javascript" src="assets/js/less-1.7.5.min.js"></script>\
 	<script src="assets/js/vendor/jquery.js"></script>\
 	<script src="assets/js/animate.js"></script>\
