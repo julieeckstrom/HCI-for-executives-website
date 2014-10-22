@@ -172,7 +172,7 @@
 		&.offWeek {
 			background-color: @accent-color;
 
-			&.hover {
+			&:hover {
 				background-color: @darker-accent-color;
 			}
 
@@ -230,8 +230,8 @@
 				background-color: transparent;
 			}
 
-			&.active {
-				background-color: @accent-color;
+			&:active {
+				background-color: @accent-color !important;
 			}
 
 			&.left {
@@ -307,8 +307,8 @@
 			&.offWeek {
 				background-color: @accent-color;
 
-				&.active {
-					background-color: @darker-accent-color;
+				&:active {
+					background-color: @darker-accent-color !important;
 				}
 				a {
 					color: #fff;
@@ -344,8 +344,8 @@
 				height: 100%;
 			}
 
-			&.active {
-				background-color: @accent-color;
+			&:active {
+				background-color: @accent-color !important;
 			}
 
 			&.onWeek, &.offWeek {
