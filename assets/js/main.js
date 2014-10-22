@@ -46,9 +46,9 @@ $(document).ready(function() {
 		var currentWeek = today.getWeek();
 		console.log(currentWeek);
 
-		$('#today-button a').attr('href', '#' + currentWeek);
+		var currentWeekDiv = $('#today-button a').attr('href', '#' + currentWeek);
 
-		var currentWeekDiv = $('#' + currentWeek);
+		//var currentWeekDiv = $('#' + currentWeek);
 		console.log(currentWeekDiv);
 		var pageTopToDivBottom  = currentWeekDiv.offset().top + $('#' + currentWeek)[0].scrollHeight;
 		var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
