@@ -44,6 +44,14 @@
 
 /** Main schedule css **/
 
+#sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+}
+
 #schedule {
 	padding: 15px 0 30px 0;
 
@@ -61,15 +69,11 @@
 				width: 100%;
 			}
 
-			.date, .clone {
+			.date,  {
 				padding-top: 18px;
 				padding-bottom: 15px;
 				text-align: center;
 				border-bottom: 1px solid #ccc;
-
-				&.fixed {
-					position: fixed;
-				}
 
 				h2 {
 					text-transform: uppercase;
