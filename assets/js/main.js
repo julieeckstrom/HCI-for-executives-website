@@ -48,10 +48,14 @@ $(document).ready(function() {
 
 		$('#today-button a').attr('href', '#' + currentWeek);
 
-		var currentWeekDiv = $('#' + currentWeek);
-		var pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
-		var scrolledPlusViewable = $(window).scrollTop()+$(window).height();
-
+		var currentWeekDiv;
+		var pageTopToDivBottom;
+		var scrolledPlusViewable;
+		if(currentWeek > 43 || currentWeek < 52) {
+			currentWeekDiv = $('#' + currentWeek);
+			pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
+			scrolledPlusViewable = $(window).scrollTop()+$(window).height();
+		}
 		// First check if the element is outside the viewable area:
 		if( $(window).scrollTop() > pageTopToDivBottom ) {
 		    console.log( "Element hidden (above viewable area)" );
