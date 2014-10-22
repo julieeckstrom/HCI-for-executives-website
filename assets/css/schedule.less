@@ -172,6 +172,10 @@
 		&.offWeek {
 			background-color: @accent-color;
 
+			&.hover {
+				background-color: @darker-accent-color;
+			}
+
 			a {
 				color: #fff;
 			}
@@ -205,7 +209,7 @@
 		background-color: #fbfbfb !important;
 		border-radius: 50%;
 		box-shadow: 0px 2px 0px #cecece;
-		height: 40px;
+		height: 40px;http://julieeckstrom.github.io/schedule.html#42
 		width: 40px;
 
 		#today-button {
@@ -224,6 +228,10 @@
 
 			&.onWeek, &.offWeek {
 				background-color: transparent;
+			}
+
+			&.active {
+				background-color: @accent-color;
 			}
 
 			&.left {
@@ -299,6 +307,9 @@
 			&.offWeek {
 				background-color: @accent-color;
 
+				&.active {
+					background-color: @darker-accent-color;
+				}
 				a {
 					color: #fff;
 				}
@@ -331,6 +342,10 @@
 
 			a {
 				height: 100%;
+			}
+
+			&.active {
+				background-color: @accent-color;
 			}
 
 			&.onWeek, &.offWeek {
