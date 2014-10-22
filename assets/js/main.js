@@ -53,7 +53,7 @@ $(document).ready(function() {
 		var scrolledPlusViewable;
 		if(currentWeek > 41 && currentWeek < 52) {
 			console.log("here");
-			$('#today').visibility = "visible";
+			$('#today').css("visibility", "visible");
 			currentWeekDiv = $('#' + currentWeek);
 			pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
 			scrolledPlusViewable = $(window).scrollTop()+$(window).height();
