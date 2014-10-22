@@ -75,20 +75,6 @@ $(document).ready(function() {
 			}
 		}
 
-
-	    if($('#days').length) {
-	        var days_div_top = $('#days').height();
-	        if (window_top > days_div_top) {
-	            $('#days').addClass('stick-days');
-	            $('#days').addClass('days-moving');
-	            $('#days-placeholder').css({display: 'block'});
-	        } else {
-	            $('#days').removeClass('stick-days');
-	            $('#days').removeClass('days-moving');
-	            $('#days-placeholder').css({display: 'none'});
-	    	}
-	    }
-
 	    if($('#today').length) {
 	        var days_div_top = $('#today').height();
 	        if (window_top > days_div_top) {

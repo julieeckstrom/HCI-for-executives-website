@@ -45,7 +45,7 @@
 /** Main schedule css **/
 
 #schedule {
-	padding: 30px 0;
+	padding: 15px 0 30px 0;
 
 	.week {
 		padding-bottom: 70px;
@@ -128,7 +128,8 @@
 
 /** This week button **/
 
-#today.moving {
+#today{
+	visibility: hidden;
 	position: fixed;
 	top: 12px;
 	z-index: 10000;
@@ -138,11 +139,21 @@
 		background-color: #f0f0f0;
 		cursor: pointer;
 		height: 34px;
+		text-align: center;
+		margin-bottom: 10px;
+		width: auto;
+		border-radius: 3px;
 
 		a {
 			color: #888;
 			padding: 10px 15px 0px 15px;
 			font-size: 13px;
+			display: block;
+			letter-spacing: .75px;
+			line-height: 15px;
+			text-decoration: none;
+			font-family: @body-font;
+			border-bottom: 0px;
 		}
 
 		&:hover {
@@ -152,161 +163,5 @@
 				color: #fff;
 			}
 		}
-	}
-}
-
-#today {
-	visibility: hidden;
-
-	#today-button {
-		background-color: @light-accent-color;
-		text-align: center;
-		margin-bottom: 10px;
-		width: 115px;
-		height: 65px;
-		border-radius: 3px;
-
-		a {
-			display: block;
-			padding: 17px 5px 0px 5px;
-			font-size: 14px;
-			letter-spacing: .75px;
-			line-height: 15px;
-			color: @accent-color;
-			text-decoration: none;
-			font-family: @body-font;
-			border-bottom: 0px;
-		}
-
-		&:hover {
-			background-color: @darker-accent-color;
-
-			a {
-				color: @darkest-accent-color;
-			}
-		}
-	}
-
-	#arrow {
-		width: auto;
-		height: auto;
-		position: fixed;
-	}
-}
-
-.pointUp:before, .pointUp:after, .pointDown:before, .pointDown:after, .pointRight:before, .pointRight:after {
-	/* Firefox */
-	-moz-transition: all 0.25s ease;
-	/* WebKit */
-	-webkit-transition: all 0.25s ease;
-	/* Opera */
-	-o-transition: all 0.25s ease;
-	/* Standard */
-	transition: all 0.25s ease;
-}
-
-.pointUp:before, .pointDown:after {
-	left: 104px;
-}
-
-.pointUp:before, .pointDown:after, .pointRight:after {
-    content: url("../images/arrow-top.png");
-	width: 12px;
-	height: 24px;
-	position: absolute;
-}
-
-.pointUp {
-	&:before {
-		behavior:url(-ms-transform.htc);
-	    transform: rotate(90deg);
-	    /* Firefox */
-	    -moz-transform:rotate(90deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(90deg);
-	    /* Opera */
-	    -o-transform:rotate(90deg);
-	    /* IE9 */
-	    -ms-transform:rotate(90deg);
-	    top: -95px;
-	    left: 23px;
-	}
-
-	&:after {
-	    transform: rotate(90deg);
-	    /* Firefox */
-	    -moz-transform:rotate(90deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(90deg);
-	    /* Opera */
-	    -o-transform:rotate(90deg);
-	    /* IE9 */
-	    -ms-transform:rotate(90deg);
-	    top: -19px;
-	    left: 19px;
-	}
-}
-
-.pointDown {
-
-	&:before {
-	    behavior:url(-ms-transform.htc);
-	    transform: rotate(270deg);
-	    /* Firefox */
-	    -moz-transform:rotate(270deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(270deg);
-	    /* Opera */
-	    -o-transform:rotate(270deg);
-	    /* IE9 */
-	    -ms-transform:rotate(270deg);
-	    top: -94px;
-	    left: 35px;	
-	}
-
-	&:after {
-	    behavior:url(-ms-transform.htc);
-	    transform: rotate(270deg);
-	    /* Firefox */
-	    -moz-transform:rotate(270deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(270deg);
-	    /* Opera */
-	    -o-transform:rotate(270deg);
-	    /* IE9 */
-	    -ms-transform:rotate(270deg);
-	    top: -16px;
-	    left: 32px;
-	}
-}
-
-.pointRight {
-
-	&:before {
-		behavior:url(-ms-transform.htc);
-	    /* Firefox */
-	    -moz-transform:rotate(180deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(180deg);
-	    /* Opera */
-	    -o-transform:rotate(180deg);
-	    /* IE9 */
-	    -ms-transform:rotate(180deg);
-	    top: -65px;
-	    left: -11px;	
-	}
-
-	&:after {
-		behavior:url(-ms-transform.htc);
-	    /* Firefox */
-	    -moz-transform:rotate(180deg);
-	    /* Safari and Chrome */
-	    -webkit-transform:rotate(180deg);
-	    /* Opera */
-	    -o-transform:rotate(180deg);
-	    /* IE9 */
-	    -ms-transform:rotate(180deg);
-	    top: -60px;
-	    left: 72px;
 	}
 }
