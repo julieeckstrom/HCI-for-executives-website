@@ -195,17 +195,22 @@
 
 @media screen and (max-width: 1250px) {
 	#today {
-		top: 53px;
+		top: 100px;
 
 		#today-button {
 			border-radius: 0;
-			background-image: url('../images/arrow.png') no-repeat !important;
+			background-color: transparent;
+			background-image: url('../images/arrow.png');
 			height: 40px;
 			width: 40px;
+
+			a {
+				height: 100%;
+			}
 		}
 
 		span.button-text {
-			visibility: hidden;
+			display: none;
 		}
 	}
 }
@@ -219,18 +224,39 @@
 
 		#today-button {
 			.body-border;
+			background-image: none;
+			background-color: inherit;
+			height: 34px;
+			margin-bottom: 10px;
+			width: auto;
+			border-radius: 3px;
 		}
+	}
+
+	span.button-text {
+		display: inline;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	#today {
-		width: 100%;
-		left: 0;
-		top: 56px;
+		top: 100px;
 
 		#today-button {
 			border-radius: 0;
+			background-color: transparent;
+			background-image: url('../images/arrow@2x.png');
+			background-size: 40px 40px;
+			height: 40px;
+			width: 40px;
+
+			a {
+				height: 100%;
+			}
+		}
+
+		span.button-text {
+			display: none;
 		}
 	}
 }
