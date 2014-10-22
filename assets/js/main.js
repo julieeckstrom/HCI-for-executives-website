@@ -76,7 +76,7 @@ $(document).ready(function() {
 		}
 
 
-	    if ($('#days').length) {
+	    if($('#days').length) {
 	        var days_div_top = $('#days').height();
 	        if (window_top > days_div_top) {
 	            $('#days').addClass('stick-days');
@@ -86,11 +86,10 @@ $(document).ready(function() {
 	            $('#days').removeClass('stick-days');
 	            $('#days').removeClass('days-moving');
 	            $('#days-placeholder').css({display: 'none'});
-	        	}
 	    	}
 	    }
 
-	    if ($('#today').length) {
+	    if($('#today').length) {
 	        var days_div_top = $('#today').height();
 	        if (window_top > days_div_top) {
 	            $('#today').addClass('moving');
