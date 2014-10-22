@@ -52,7 +52,6 @@ $(document).ready(function() {
 		var pageTopToDivBottom;
 		var scrolledPlusViewable;
 		if(currentWeek > 41 && currentWeek < 52) {
-			console.log("here");
 			$('#today').css("visibility", "visible");
 			currentWeekDiv = $('#' + currentWeek);
 			pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
@@ -60,19 +59,16 @@ $(document).ready(function() {
 
 			// First check if the element is outside the viewable area:
 			if( $(window).scrollTop() > pageTopToDivBottom ) {
-			    console.log( "Element hidden (above viewable area)" );
 			    $('#arrow').removeClass('pointDown');
 			    $('#arrow').removeClass('pointRight');
 			    $('#arrow').addClass('pointUp');
 
 			} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
-			    console.log( "Element hidden (below viewable area)" );
 			    $('#arrow').removeClass('pointUp');
 			    $('#arrow').removeClass('pointRight');
 				$('#arrow').addClass('pointDown');
 
 			} else {
-			    console.log( "Element visible! (within viewable area)" );
 			    $('#arrow').removeClass('pointUp');
 			    $('#arrow').removeClass('pointDown');
 				$('#arrow').addClass('pointRight');
@@ -90,6 +86,16 @@ $(document).ready(function() {
 	            $('#days').removeClass('stick-days');
 	            $('#days').removeClass('days-moving');
 	            $('#days-placeholder').css({display: 'none'});
+	        	}
+	    	}
+	    });
+
+	    if ($('#today').length) {
+	        var days_div_top = $('#today').height();
+	        if (window_top > days_div_top) {
+	            $('#today').addClass('moving');
+	        } else {
+	            $('#days').removeClass('moving');
 	        	}
 	    	}
 	    });
