@@ -59,19 +59,19 @@ $(document).ready(function() {
 
 			// First check if the element is outside the viewable area:
 			if( $(window).scrollTop() > pageTopToDivBottom ) {
-			    $('#arrow').removeClass('pointDown');
-			    $('#arrow').removeClass('pointRight');
-			    $('#arrow').addClass('pointUp');
+			    // Above 
+			    $('#today-button').removeClass('onWeek');
+				$('#today-button').addClass('offWeek');
 
 			} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
-			    $('#arrow').removeClass('pointUp');
-			    $('#arrow').removeClass('pointRight');
-				$('#arrow').addClass('pointDown');
+			    // Below
+			    $('#today-button').removeClass('onWeek');
+				$('#today-button').addClass('offWeek');
 
 			} else {
-			    $('#arrow').removeClass('pointUp');
-			    $('#arrow').removeClass('pointDown');
-				$('#arrow').addClass('pointRight');
+				// Next to
+			    $('#today-button').removeClass('offWeek');
+				$('#today-button').addClass('onWeek');
 			}
 		}
 

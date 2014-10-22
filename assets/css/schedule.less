@@ -148,13 +148,28 @@
 	right: 5em;
 
 	#today-button {
-		background-color: #f0f0f0;
 		cursor: pointer;
 		height: 34px;
 		text-align: center;
 		margin-bottom: 10px;
 		width: auto;
 		border-radius: 3px;
+
+		&.offWeek {
+			background-color: #f0f0f0;
+
+			a {
+				color: #888;
+			}
+		}
+
+		&.onWeek {
+			background-color: @accent-color;
+
+			a {
+				color: #fff;
+			}
+		}
 
 		a {
 			color: #888;
