@@ -1,7 +1,7 @@
 document.write('\
 	<!-- Meta -->\
 	<meta charset="UTF-8">\
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1">\
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">\
 \
 	<!-- CSS -->\
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">\
