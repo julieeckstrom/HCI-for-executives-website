@@ -6,7 +6,7 @@ document.write('\
 	<!-- CSS -->\
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">\
 	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">\
-	<link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />\
+	<link href="assets/css/styles.less" rel="stylesheet/less" type="text/css"  />\
 \
 	<!-- JS -->\
 	<script type="text/javascript" src="assets/js/less-1.7.5.min.js"></script>\
