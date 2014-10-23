@@ -5,15 +5,6 @@ Date.prototype.getWeek = function() {
 	      return Math.ceil(dayOfYear/7)
 	    };
 
-function getURL() {
-	var path = window.location.pathname;
-	var loc = path.substring(path.lastIndexOf('/')+1);
-	var url = $(this).attr('href');
-
-	console.log(loc);
-	return loc;
-}
-
 $(document).ready(function() {
 
 	$('#homework-thumbs').click(function(){
@@ -60,7 +51,8 @@ $(document).ready(function() {
 		var currentWeekDiv;
 		var pageTopToDivBottom;
 		var scrolledPlusViewable;
-		if(new getURL() == "schedule.html") {
+		var loc = path.substring(path.lastIndexOf('/')+1);
+		if(loc == "schedule.html") {
 			if(currentWeek > 41 && currentWeek < 52) {
 				$('#today').css("visibility", "visible");
 				currentWeekDiv = $('#' + currentWeek);
