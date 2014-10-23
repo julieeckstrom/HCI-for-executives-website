@@ -5,6 +5,14 @@ Date.prototype.getWeek = function() {
 	      return Math.ceil(dayOfYear/7)
 	    };
 
+function getURL() {
+	var path = window.location.pathname;
+	var loc = path.substring(path.lastIndexOf('/')+1);
+	var url = $(this).attr('href');
+
+	return url;
+}
+
 $(document).ready(function() {
 
 	$('#homework-thumbs').click(function(){
@@ -51,47 +59,40 @@ $(document).ready(function() {
 		var currentWeekDiv;
 		var pageTopToDivBottom;
 		var scrolledPlusViewable;
-		if(currentWeek > 41 && currentWeek < 52) {
-			$('#today').css("visibility", "visible");
-			currentWeekDiv = $('#' + currentWeek);
-			pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
-			scrolledPlusViewable = $(window).scrollTop()+$(window).height();
+		if(getURL() = "schedule.html")
+			if(currentWeek > 41 && currentWeek < 52) {
+				$('#today').css("visibility", "visible");
+				currentWeekDiv = $('#' + currentWeek);
+				pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
+				scrolledPlusViewable = $(window).scrollTop()+$(window).height();
 
-			// First check if the element is outside the viewable area:
-			if( $(window).scrollTop() > pageTopToDivBottom ) {
-			    // Above 
-			    $('#today-button').removeClass('onWeek');
-			    $('#today-button').removeClass('left');
-			    $('#today-button').removeClass('down');
-				$('#today-button').addClass('offWeek');
-				$('#today-button').addClass('up');
+				// First check if the element is outside the viewable area:
+				if( $(window).scrollTop() > pageTopToDivBottom ) {
+				    // Above 
+				    $('#today-button').removeClass('onWeek');
+				    $('#today-button').removeClass('left');
+				    $('#today-button').removeClass('down');
+					$('#today-button').addClass('offWeek');
+					$('#today-button').addClass('up');
 
-			} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
-			    // Below
-			    $('#today-button').removeClass('onWeek');
-			    $('#today-button').removeClass('up');
-			    $('#today-button').removeClass('left');
-				$('#today-button').addClass('offWeek');
-				$('#today-button').addClass('down');
+				} else if( scrolledPlusViewable < currentWeekDiv.offset().top ) {
+				    // Below
+				    $('#today-button').removeClass('onWeek');
+				    $('#today-button').removeClass('up');
+				    $('#today-button').removeClass('left');
+					$('#today-button').addClass('offWeek');
+					$('#today-button').addClass('down');
 
-			} else {
-				// Next to
-			    $('#today-button').removeClass('offWeek');
-			    $('#today-button').removeClass('up');
-			    $('#today-button').removeClass('down');
-				$('#today-button').addClass('onWeek');
-				$('#today-button').addClass('left');
+				} else {
+					// Next to
+				    $('#today-button').removeClass('offWeek');
+				    $('#today-button').removeClass('up');
+				    $('#today-button').removeClass('down');
+					$('#today-button').addClass('onWeek');
+					$('#today-button').addClass('left');
+				}
 			}
 		}
-
-	    if($('#today').length) {
-	        var days_div_top = $('#today').height();
-	        if (window_top > days_div_top) {
-	            $('#today').addClass('moving');
-	        } else {
-	            $('#today').removeClass('moving');
-	    	}
-	    }
 	});
 
 });
