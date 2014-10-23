@@ -51,6 +51,7 @@ $(document).ready(function() {
 		var currentWeekDiv;
 		var pageTopToDivBottom;
 		var scrolledPlusViewable;
+		var path = window.location.pathname;
 		var loc = path.substring(path.lastIndexOf('/')+1);
 		if(loc == "schedule.html") {
 			if(currentWeek > 41 && currentWeek < 52) {
