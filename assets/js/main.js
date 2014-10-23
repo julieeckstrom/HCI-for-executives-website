@@ -43,18 +43,18 @@ $(document).ready(function() {
 	$('#homework-thumbs').click(function(){
 		if($('#homework-thumbs-title').is(":visible")) {
 			if($('#homework-thumbs li').is(":hidden")) {
-				$('#homework-thumbs ul').css('display', 'block');
+				$('#homework-thumbs ul').addClass('shadow');
 				$('#homework-thumbs li').css('display', 'block');
 			} else {
 				$('#homework-thumbs li').css('display', 'none');
-				$('#homework-thumbs ul').css('display', 'none');
+				$('#homework-thumbs ul').removeClass('shadow');
 			}
 		}
 	});
 
 	$(window).resize(function(){
 		if($(window).width() > 868) {
-			$('#homework-thumbs ul').css('display', 'block');
+			$('#homework-thumbs ul').removeClass('shadow');
 			$('#homework-thumbs li').css('display', 'inline-block');
 		}
 	})
