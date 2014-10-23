@@ -59,7 +59,8 @@ $(document).ready(function() {
 		var currentWeekDiv;
 		var pageTopToDivBottom;
 		var scrolledPlusViewable;
-		if(getURL() = "schedule.html")
+		if(getURL() = "schedule.html") {
+			console.log(getURL());
 			if(currentWeek > 41 && currentWeek < 52) {
 				$('#today').css("visibility", "visible");
 				currentWeekDiv = $('#' + currentWeek);
