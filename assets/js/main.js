@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 	$(window).resize(function(){
 		if($(window).width() > 868) {
-			$('#homework-thumbs li').css('display', 'block');
+			$('#homework-thumbs li').css('display', 'inline-block');
 		}
 	})
 
