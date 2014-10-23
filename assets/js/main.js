@@ -64,6 +64,10 @@ $(document).ready(function() {
 		var loc = path.substring(path.lastIndexOf('/')+1);
 		var url = $(this).attr('href');
 
+		if(path == "/") {
+			($"#first-nav-item a").addClass('on');
+		}
+
 		if(loc == url){
 			$(this).addClass('on');
 		};
