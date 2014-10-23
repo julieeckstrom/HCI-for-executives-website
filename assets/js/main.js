@@ -10,7 +10,8 @@ function getURL() {
 	var loc = path.substring(path.lastIndexOf('/')+1);
 	var url = $(this).attr('href');
 
-	return url;
+	console.log(loc);
+	return loc;
 }
 
 $(document).ready(function() {
