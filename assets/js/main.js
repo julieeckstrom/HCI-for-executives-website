@@ -76,7 +76,6 @@ $(document).ready(function() {
 		var width = window.innerWidth;
 
 		var currentWeek = getWeek(new Date());
-		console.log(currentWeek);
 
 		$('#today-button a').attr('href', '#' + currentWeek);
 
@@ -86,7 +85,7 @@ $(document).ready(function() {
 		var path = window.location.pathname;
 		var loc = path.substring(path.lastIndexOf('/')+1);
 		if(loc == "schedule.html") {
-			if(currentWeek > 41 && currentWeek < 52) {
+			if(currentWeek > 43 && currentWeek < 52) {
 				$('#today').css("visibility", "visible");
 				currentWeekDiv = $('#' + currentWeek);
 				pageTopToDivBottom  = $('#' + currentWeek).offset().top + $('#' + currentWeek)[0].scrollHeight;
