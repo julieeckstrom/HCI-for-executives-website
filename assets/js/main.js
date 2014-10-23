@@ -50,6 +50,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$(window).resize(function(){
+		if($(window).width() > 868) {
+			$('#homework-thumbs li').css('display', 'block');
+		}
+	})
+
 	$('#main_nav li a').each(function(){
 		var path = window.location.pathname;
 		var loc = path.substring(path.lastIndexOf('/')+1);
