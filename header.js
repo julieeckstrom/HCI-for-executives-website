@@ -16,7 +16,7 @@ document.write('\
                     <li><a href="schedule.html">Schedule</a></li>\
                     <li><a href="homework.html">Homework</a></li>\
                     <li><a href="syllabus.html">Syllabus</a></li>\
-                    <li><a href="staff_information.html">Staff Information</a></li>\
+                    <li><a href="staff.html">Staff Information</a></li>\
                 </ul>\
             </div>\
           </nav>\
@@ -29,7 +29,7 @@ document.write('\
             <li class="m-nav-item"><a href="schedule.html" class="m-nav-link">Schedule</a></li>\
             <li class="m-nav-item"><a href="homework.html" class="m-nav-link">Homework</a></li>\
             <li class="m-nav-item"><a href="syllabus.html" class="m-nav-link">Syllabus</a></li>\
-            <li class="m-nav-item" id="m-nav-item-last"><a href="staff_information.html" class="m-nav-link">Staff Information</a></li>\
+            <li class="m-nav-item" id="m-nav-item-last"><a href="staff.html" class="m-nav-link">Staff Information</a></li>\
     	</ul>\
     </nav>\
 ');
