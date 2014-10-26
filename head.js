@@ -14,7 +14,7 @@ document.write('\
 	<script src="assets/js/animate.js"></script>\
 	<script src="assets/js/hamburger.js"></script>\
 	<script src="assets/js/main.js"></script>\
-	<script src="assets/js/vendor/bootstrap.min.js"></script>\
+	<script src="assets/js/vendor/bootstrap.js"></script>\
 \
 	<title>HCI for Technology Executives</title>\
 ');
