@@ -60,17 +60,23 @@
 			/** Thumb states **/
 			&.inactive {
 
-				&.selected .tile, .tile {
+				.tile {
 					background: #e5e5e5;
 					color: #a1a1a1;
 				}
 
-				&.selected:after {
-					border-top-color: #e5e5e5 !important;
+				&.selected {
+					.tile {
+						background: #d9d9d9;
+					}
+
+					&:after {
+						border-top-color: #d9d9d9 !important;
+					}
 				}
 
 				&:hover .tile {
-					background: #888;
+					background: #d9d9d9;
 					color: #a1a1a1;
 				}
 			}
