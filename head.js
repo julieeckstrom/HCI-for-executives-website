@@ -10,8 +10,8 @@ document.write('\
 \
 	<!-- JS -->\
 	<script type="text/javascript" src="assets/js/less-1.7.5.min.js"></script>\
-	<script src="assets/js/vendor/bootstrap.js"></script>\
 	<script src="assets/js/vendor/jquery.js"></script>\
+	<script src="assets/js/vendor/bootstrap.js"></script>\
 	<script src="assets/js/animate.js"></script>\
 	<script src="assets/js/hamburger.js"></script>\
 	<script src="assets/js/main.js"></script>\
