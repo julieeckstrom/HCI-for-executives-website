@@ -83,8 +83,6 @@ $(document).ready(function() {
 	    $(this).addClass('selected');
 	});
 
-	$('.carousel').carousel();
-
 
 	$(window).scroll(function() {
 		var window_top = $(window).scrollTop();
