@@ -32,7 +32,7 @@
 					background: #ccc;
 				}
 
-				&:before, &:after {
+				&:after {
 					content: "";
 				    position: absolute;
 				    width: 0;
@@ -40,24 +40,14 @@
 				    border-style: solid;
 				    border-color: transparent;
 				    border-bottom: 0;
+				    bottom: -17px;
+					left: 34px;
+					border-top-color: #ccc;
+					border-width: 17px;
 				    -webkit-transition:all 1.0s ease;
 					-moz-transition:all 1.0s ease;
 					-o-transition:all 1.0s ease;
 					transition:all 1.0s ease;
-				}
-
-				&:before {
-					bottom: -21px;
-					left: 30px;
-					border-top-color: #ccc;
-					border-width: 21px;
-				}
-
-				&:after {
-					bottom: -17px;
-					left: 34px;
-					border-top-color: #ccc;
-					border-width: 17px;
 				}
 			}
 
