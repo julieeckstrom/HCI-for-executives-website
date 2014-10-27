@@ -10,7 +10,7 @@
 		vertical-align: top;
 		text-align: center;
 		margin-left: .75em;
-		width: 11%;
+		width: 6.5em;
 		height: 100px;
 
 		a {
@@ -25,12 +25,14 @@
 
 			/** Thumb states **/
 			&.inactive {
-				opacity: 0.6;
+				background: #d1d1d1;
+				color: #888;
 			}
 
 			&.selected {
 				.tile {
 					background: #ccc;
+					color: #fff;
 				}
 
 				&:after {
@@ -51,7 +53,10 @@
 					transition:all 1.0s ease;
 				}
 			}
-
+			
+			&:hover {
+				background: #ccc;
+			}
 
 		}
 	}
@@ -88,10 +93,6 @@
 			text-transform: uppercase;
 			margin-left: 19px;
 		}
-	}
-
-	&:hover {
-		background: #ccc;
 	}
 }
 
