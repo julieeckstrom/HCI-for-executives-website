@@ -180,7 +180,8 @@
     </div>
     <script src="footer.js"></script>
     <script>
-        $('#homework-carousel').carousel();
+     $(document).ready(function () {
+        $('#homework-carousel').carousel('slide');
 
         // This allows other homework pages to link directly to a carousel item
         var url = document.location.toString();
@@ -197,7 +198,8 @@
         $('#my-carousel-id').bind('slid', function (e) {
             // Update location based on slide (index is 0-based)
             window.location.hash = "#"+ parseInt($('#homework-carousel .carousel-inner .item.active').index()+1);
-        });
+        }
+    });
     </script>
 </body>
 
