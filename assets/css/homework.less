@@ -23,10 +23,47 @@
 			color: @body-text-color;
 			z-index: 100;
 
+			.tile {
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				.body-border;
+
+				h2 {
+					font-family: @body-font;
+					font-weight: 100;
+					padding: 15px 0 10px 0;
+					font-size: 25px;
+				}
+
+				#smaller-header {
+					font-size: 14px;
+				}
+
+				p {
+					font-family: @body-font;
+					font-weight: 300;
+					font-size: 10pt;
+					line-height: 14pt;
+					letter-spacing: 0px;
+
+					&.due {
+						font-size: 10px;
+						font-weight: 600;
+						text-align: left;
+						text-transform: uppercase;
+						margin-left: 19px;
+					}
+				}
+			}
+
 			/** Thumb states **/
 			&.inactive {
-				background: #d1d1d1;
-				color: #888;
+
+				tile {
+					background: #d1d1d1;
+					color: #888;
+				}
 			}
 
 			&.selected {
@@ -53,45 +90,13 @@
 					transition:all 1.0s ease;
 				}
 			}
-			
+
 			&:hover {
-				background: #ccc;
+				tile {
+					background: #ccc;
+				}
 			}
 
-		}
-	}
-}
-
-.tile {
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	.body-border;
-
-	h2 {
-		font-family: @body-font;
-		font-weight: 100;
-		padding: 15px 0 10px 0;
-		font-size: 25px;
-	}
-
-	#smaller-header {
-		font-size: 14px;
-	}
-
-	p {
-		font-family: @body-font;
-		font-weight: 300;
-		font-size: 10pt;
-		line-height: 14pt;
-		letter-spacing: 0px;
-
-		&.due {
-			font-size: 10px;
-			font-weight: 600;
-			text-align: left;
-			text-transform: uppercase;
-			margin-left: 19px;
 		}
 	}
 }
