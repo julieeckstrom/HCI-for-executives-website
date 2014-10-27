@@ -185,9 +185,11 @@
         if (url.match('#')) {
             // Clear active item
             $('#homework-carousel .carousel-inner .item.active').removeClass('active');
+            $('#homework-thumbs ul li .carousel-thumb.selected').removeClass('selected');
 
             // Activate item number #hash
             $('.carousel-inner div:nth-child(' + url.split('#')[1] + ')').addClass('active');
+            $("#carousel-selector-" + url.split('#')[1] + "").addClass('selected');
             console.log("here");
         }
 
