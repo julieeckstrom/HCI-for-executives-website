@@ -5,7 +5,24 @@
     <script>document.title = "Homework for: 05-863 / 08-763 / 45-888"</script>
 </head>
 <body>
-    <script src="header.js"></script> 
+    <script src="header.js"></script>
+
+    <script>
+    // This allows other homework pages to link directly to a carousel item
+        var url = document.location.toString();
+        if (url.match('#')) {
+            // Clear active item
+            $('#homework-carousel .carousel-inner .item.active').removeClass('active');
+
+            // Activate item number #hash
+            $('.carousel-inner div:nth-child(' + url.split('#')[1] + ')').addClass('active');
+        }
+
+        $('#my-carousel-id').bind('slid', function (e) {
+            // Update location based on slide (index is 0-based)
+            window.location.hash = "#"+ parseInt($('#homework-carousel .carousel-inner .item.active').index()+1);
+        });
+    </script>
 
     <div id="container">
     	<article>
@@ -14,58 +31,80 @@
             </div>
             <!-- thumb navigation carousel -->
             <div id="homework-thumbs">
+
+                <!-- mobile dropdown -->
                 <p id="homework-thumbs-title">Homework List</p>
                 <img id="homework-thumbs-img" src="assets/images/plus.png">
+                <!-- end mobile dropdown -->
+
+
+                <!-- remove class "inactive" once the homework is posted -->
                 <ul class="list-inline">
-                    <li> <a id="carousel-selector-0" class="carousel-thumb selected">
+                    <li> 
+                        <a id="carousel-selector-0" class="carousel-thumb selected">
                         <div class="tile">
                             <h2>0</h2>
                             <p>Due</p>
                             <p>Wed Oct. 29</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-1" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-1" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>1</h2>
                             <p>Due</p>
                             <p>Wed Nov. 5</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-2" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-2" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>2</h2>
                             <p>Due</p>
                             <p>Wed Nov. 12</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-3" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-3" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>3</h2>
                             <p>Due</p>
                             <p>Mon Nov. 17</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-4" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-4" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>4</h2>
                             <p>Due</p>
                             <p>Mon Nov. 24</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-5" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-5" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>5</h2>
                             <p>Due</p>
                             <p>Mon Dec. 1</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-6" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-6" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2>6</h2>
                             <p>Due</p>
                             <p>Mon Dec. 8</p>
                         </div>
-                    </a></li><li> <a id="carousel-selector-7" class="carousel-thumb inactive">
+                        </a>
+                    </li><li> 
+                        <a id="carousel-selector-7" class="carousel-thumb inactive">
                         <div class="tile">
                             <h2 id="smaller-header">Final exam instructions</h2>
                             <p>Fri Dec. 12</p>
                             <p>or Mon Dec. 15</p>
                         </div>
-                    </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!-- main slider carousel -->
