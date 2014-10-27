@@ -180,7 +180,9 @@
     </div>
     <script src="footer.js"></script>
     <script>
-    // This allows other homework pages to link directly to a carousel item
+        $('#homework-carousel').carousel();
+
+        // This allows other homework pages to link directly to a carousel item
         var url = document.location.toString();
         if (url.match('#')) {
             // Clear active item
